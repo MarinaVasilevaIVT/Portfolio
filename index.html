@@ -19,7 +19,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">Site-portfolio</a>
+                <a class="navbar-brand" href="#page-top">Сайт-портфолио </a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -559,28 +559,57 @@
         </div>
 
 
-        <!-- Portfolio Modal 4-->
+        <!-- Основы машинного обучения-->
         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-header border-0">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
                     <div class="modal-body text-center pb-5">
                         <div class="container">
                             <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
-                                    <!-- Icon Divider-->
+                                <div class="col-lg-12">
+                                    <!-- Title -->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Основы машинного обучения</h2>
+                                    <!-- Divider -->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-cogs"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="static/img/portfolio/game.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <!-- Tabs for Labs -->
+                                    <ul class="nav nav-tabs mb-4" id="pdfTabs" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="pdf1-tab" data-bs-toggle="tab" data-bs-target="#pdf1" type="button" role="tab" aria-controls="pdf1" aria-selected="true">Лабораторная работа №1</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pdf2-tab" data-bs-toggle="tab" data-bs-target="#pdf2" type="button" role="tab" aria-controls="pdf2" aria-selected="false">Лабораторная работа №2</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pdf3-tab" data-bs-toggle="tab" data-bs-target="#pdf3" type="button" role="tab" aria-controls="pdf3" aria-selected="false">Лабораторная работа №3</button>
+                                        </li>
+                                    </ul>
+                                    <!-- Tab Content -->
+                                    <div class="tab-content" id="pdfTabsContent">
+                                        <!-- Лаб 1 -->
+                                        <div class="tab-pane fade show active" id="pdf1" role="tabpanel" aria-labelledby="pdf1-tab">
+                                            <iframe src="static/ml/1.pdf" width="100%" height="500px" frameborder="0"></iframe>
+                                            <p><a href="https://colab.research.google.com/drive/18y4C81nClX-VmBqQ8wpDlxfXVEo2rCBc?usp=drive_link" target="_blank">Перейти к ноутбуку</a></p>
+                                        </div>
+                                        <!-- Лаб 2 -->
+                                        <div class="tab-pane fade" id="pdf2" role="tabpanel" aria-labelledby="pdf2-tab">
+                                            <iframe src="static/ml/2.pdf" width="100%" height="500px" frameborder="0"></iframe>
+                                            <p><a href="https://colab.research.google.com/drive/1rvlDFY27Q0RCL5YqXWbVZvJbnhmAtKLm?usp=drive_link" target="_blank">Перейти к ноутбуку</a></p>
+                                        </div>
+                                        <!-- Лаб 3 -->
+                                        <div class="tab-pane fade" id="pdf3" role="tabpanel" aria-labelledby="pdf3-tab">
+                                            <iframe src="static/ml/3.pdf" width="100%" height="500px" frameborder="0"></iframe>
+                                            <p><a href="https://colab.research.google.com/drive/1Lj3_OPCHsGjxSebNW416fHP8ZipZgHUV?usp=drive_link" target="_blank">Перейти к ноутбуку</a></p>
+                                        </div>
+                                    </div>
+                                    <!-- Close Button -->
+                                    <button class="btn btn-primary mt-4" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
                                     </button>
@@ -591,7 +620,8 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio Modal 5-->
+
+        <!-- Базы данных-->
         <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -601,20 +631,213 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Базы данных</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="static/img/portfolio/safe.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <!-- Tabs for Labs -->
+                                    <ul class="nav nav-tabs mb-4" id="labTabs5" role="tablist">
+                                        
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" 
+                                                    id="lab1-tab5" 
+                                                    data-bs-toggle="tab" 
+                                                    data-bs-target="#lab15" 
+                                                    type="button" 
+                                                    role="tab" 
+                                                    aria-controls="lab15" 
+                                                    aria-selected="true">
+                                                Лабораторная работа 1
+                                            </button>
+                                        </li>
+                                        
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link " 
+                                                    id="lab2-tab5" 
+                                                    data-bs-toggle="tab" 
+                                                    data-bs-target="#lab25" 
+                                                    type="button" 
+                                                    role="tab" 
+                                                    aria-controls="lab25" 
+                                                    aria-selected="false">
+                                                Лабораторная работа 2
+                                            </button>
+                                        </li>
+                                        
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link " 
+                                                    id="lab3-tab5" 
+                                                    data-bs-toggle="tab" 
+                                                    data-bs-target="#lab35" 
+                                                    type="button" 
+                                                    role="tab" 
+                                                    aria-controls="lab35" 
+                                                    aria-selected="false">
+                                                Лабораторная работа 3
+                                            </button>
+                                        </li>
+                                        
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link " 
+                                                    id="lab4-tab5" 
+                                                    data-bs-toggle="tab" 
+                                                    data-bs-target="#lab45" 
+                                                    type="button" 
+                                                    role="tab" 
+                                                    aria-controls="lab45" 
+                                                    aria-selected="false">
+                                                Лабораторная работа 4
+                                            </button>
+                                        </li>
+                                        
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link " 
+                                                    id="lab5-tab5" 
+                                                    data-bs-toggle="tab" 
+                                                    data-bs-target="#lab55" 
+                                                    type="button" 
+                                                    role="tab" 
+                                                    aria-controls="lab55" 
+                                                    aria-selected="false">
+                                                Лабораторная работа 5
+                                            </button>
+                                        </li>
+                                        
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link " 
+                                                    id="lab6-tab5" 
+                                                    data-bs-toggle="tab" 
+                                                    data-bs-target="#lab65" 
+                                                    type="button" 
+                                                    role="tab" 
+                                                    aria-controls="lab65" 
+                                                    aria-selected="false">
+                                                Лабораторная работа 6
+                                            </button>
+                                        </li>
+                                        
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link " 
+                                                    id="lab7-tab5" 
+                                                    data-bs-toggle="tab" 
+                                                    data-bs-target="#lab75" 
+                                                    type="button" 
+                                                    role="tab" 
+                                                    aria-controls="lab75" 
+                                                    aria-selected="false">
+                                                Лабораторная работа 7
+                                            </button>
+                                        </li>
+                                        
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="project-tab5" data-bs-toggle="tab" data-bs-target="#project5" type="button" role="tab" aria-controls="project5" aria-selected="false">Итоговый командный проект</button>
+                                        </li>
+                                    </ul>
+                                    <!-- Tab Content -->
+                                    <div class="tab-content" id="labTabsContent5">
+                                        <!-- Лабы -->
+                                        
+                                        <div class="tab-pane fade show active" 
+                                            id="lab15" 
+                                            role="tabpanel" 
+                                            aria-labelledby="lab1-tab5">
+                                            <iframe 
+                                                src="/static/db/LR1.pdf" 
+                                                width="100%" 
+                                                height="500px" 
+                                                style="border:none;">
+                                            </iframe>
+                                        </div>
+                                        
+                                        <div class="tab-pane fade " 
+                                            id="lab25" 
+                                            role="tabpanel" 
+                                            aria-labelledby="lab2-tab5">
+                                            <iframe 
+                                                src="/static/db/LR2.pdf" 
+                                                width="100%" 
+                                                height="500px" 
+                                                style="border:none;">
+                                            </iframe>
+                                        </div>
+                                        
+                                        <div class="tab-pane fade " 
+                                            id="lab35" 
+                                            role="tabpanel" 
+                                            aria-labelledby="lab3-tab5">
+                                            <iframe 
+                                                src="/static/db/LR3.pdf" 
+                                                width="100%" 
+                                                height="500px" 
+                                                style="border:none;">
+                                            </iframe>
+                                        </div>
+                                        
+                                        <div class="tab-pane fade " 
+                                            id="lab45" 
+                                            role="tabpanel" 
+                                            aria-labelledby="lab4-tab5">
+                                            <iframe 
+                                                src="/static/db/LR4.pdf" 
+                                                width="100%" 
+                                                height="500px" 
+                                                style="border:none;">
+                                            </iframe>
+                                        </div>
+                                        
+                                        <div class="tab-pane fade " 
+                                            id="lab55" 
+                                            role="tabpanel" 
+                                            aria-labelledby="lab5-tab5">
+                                            <iframe 
+                                                src="/static/db/LR5.pdf" 
+                                                width="100%" 
+                                                height="500px" 
+                                                style="border:none;">
+                                            </iframe>
+                                        </div>
+                                        
+                                        <div class="tab-pane fade " 
+                                            id="lab65" 
+                                            role="tabpanel" 
+                                            aria-labelledby="lab6-tab5">
+                                            <iframe 
+                                                src="/static/db/LR6.pdf" 
+                                                width="100%" 
+                                                height="500px" 
+                                                style="border:none;">
+                                            </iframe>
+                                        </div>
+                                        
+                                        <div class="tab-pane fade " 
+                                            id="lab75" 
+                                            role="tabpanel" 
+                                            aria-labelledby="lab7-tab5">
+                                            <iframe 
+                                                src="/static/db/LR7.pdf" 
+                                                width="100%" 
+                                                height="500px" 
+                                                style="border:none;">
+                                            </iframe>
+                                        </div>
+                                        
+                                        <!-- Итоговый проект -->
+                                        <div class="tab-pane fade" id="project5" role="tabpanel" aria-labelledby="project-tab">
+                                            <iframe 
+                                                src="/static/db/project.pdf"
+                                                frameborder="0" 
+                                                width="100%" 
+                                                height="500px">
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                    <!-- Close Button -->
+                                    <button class="btn btn-primary mt-4" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -623,30 +846,58 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio Modal 6-->
+        <!-- Сертификаты -->
         <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-header border-0">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
                     <div class="modal-body text-center pb-5">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
-                                    <!-- Icon Divider-->
+                                    <!-- Portfolio Modal - Title -->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Сертификаты</h2>
+                                    <!-- Icon Divider -->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="static/img/portfolio/submarine.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                    <!-- Portfolio Modal - Certificates -->
+                                    <div class="row">
+                                        <!-- Certificate 1 -->
+                                        <div class="col-md-4 mb-4">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="static/img/certificates/1.jpg">
+                                                <img class="img-fluid rounded" src="static/img/certificates/1.jpg" alt="Certificate 1" />
+                                            </a>
+                                            <p class="mt-2">Сертификат 1</p>
+                                        </div>
+                                        <!-- Certificate 2 -->
+                                        <div class="col-md-4 mb-4">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="static/img/certificates/2.jpg">
+                                                <img class="img-fluid rounded" src="static/img/certificates/2.jpg" alt="Certificate 2" />
+                                            </a>
+                                            <p class="mt-2">Сертификат 2</p>
+                                        </div>
+                                        <!-- Certificate 3 -->
+                                        <div class="col-md-4 mb-4">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="static/img/certificates/3.jpg">
+                                                <img class="img-fluid rounded" src="static/img/certificates/3.jpg" alt="Certificate 3" />
+                                            </a>
+                                            <p class="mt-2">Сертификат 3</p>
+                                        </div>
+                                        <!-- Certificate 4 -->
+                                        <div class="col-md-4 mb-4">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="static/img/certificates/4.jpg">
+                                                <img class="img-fluid rounded" src="static/img/certificates/4.jpg" alt="Certificate 4" />
+                                            </a>
+                                            <p class="mt-2">Сертификат 4</p>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary mt-4" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i> Close
                                     </button>
                                 </div>
                             </div>
@@ -655,6 +906,31 @@
                 </div>
             </div>
         </div>
+
+<!-- Модальное окно для увеличенного изображения -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img id="modalImage" src="" class="img-fluid" alt="Enlarged Certificate">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var imageModal = document.getElementById('imageModal');
+    imageModal.addEventListener('show.bs.modal', function (event) {
+        var button = event.relatedTarget; 
+        var imageUrl = button.getAttribute('data-bs-image'); 
+        var modalImage = imageModal.querySelector('#modalImage');
+        modalImage.src = imageUrl;
+    });
+</script>
+        
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
